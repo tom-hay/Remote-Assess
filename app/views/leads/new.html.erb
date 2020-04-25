@@ -1,0 +1,26 @@
+<div class="banner">
+  <div class="container">
+    <h1><strong>Remote Assess.</strong></h1>
+    <p>Change the way your business operates by using 360° photography.</p>
+  </div>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+  <div class="card-product">
+    <img src="https://source.unsplash.com/Rjf6Sse42kA" class="img-fluid" alt="Responsive image">
+    <div class="card-product-infos">
+      <%= simple_form_for @lead do |f| %>
+        <%= f.input :name %>
+        <%= f.input :email %>
+        <%= f.input :message %>
+        <%= f.submit "Submit", :class => "btn btn-flat" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="card-product">
+    <div class="card-product-infos">
+      <h2>Or give us a call</h2>
+      <p>Insert phone number here</p>
+    </div>
+  </div>
+</div>
