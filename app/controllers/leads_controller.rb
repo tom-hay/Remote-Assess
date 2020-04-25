@@ -17,7 +17,7 @@ class LeadsController < ApplicationController
   private
 
   def lead_params
-    params.require(:lead).permit(:name, :email)
+    params.require(:lead).permit(:name, :email, :message)
   end
 
 end
