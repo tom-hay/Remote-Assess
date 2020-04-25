@@ -11,7 +11,7 @@ class LeadsController < ApplicationController
   def create
     @lead = Lead.new(lead_params)
     @lead.save
-    render :new
+    redirect_to root_path
   end
 
   private
